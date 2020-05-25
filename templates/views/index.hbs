@@ -1,0 +1,30 @@
+<!--Handlebar file-->
+<!--Basically handlebar files are html files-->
+<html>
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="/img/weather.png" />
+   
+</head>
+
+    <body>
+        <div class=main-content>
+        {{>header}} <!--Rendering partials. Provide partials file name-->
+        <p>Use this site to get your weather.
+        This is a simple weather live data app using node and express js</P>
+
+        <form >
+            <input type="text" name="locationInput" placeholder="Location" />
+            <button>Search</button>
+        </form>
+        <p id="msg1"></p>
+        <p id="msg2"></p>
+        </div>
+        <h4>{{name}}</h4>
+
+        {{>footer}}
+
+         <script src="./js/app.js"> </script>
+    </body>
+</html>

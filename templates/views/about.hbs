@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="/img/weather.png" />
+</head>
+<html>
+    <body>
+        <div class=main-content>
+            {{>header}} <!--Rendering partials. Provide partials file name-->
+            <h4>{{title}}</h4>
+            <img src="./img/weather.jpg" class="potrait">
+            <p>{{name}}</p>
+        </div>
+        {{>footer}}
+    </body>
+</html>
