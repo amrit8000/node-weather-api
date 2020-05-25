@@ -24,7 +24,8 @@ weatherForm.addEventListener('submit', (event) => {
     console.log(" searched location :: " , searchItem.value)
     
     //weather api calling using 'fetch' api
-    fetch('http://localhost:3000/weather?address=' + searchItem.value).then((response)=> {
+    //http://localhost:3000
+    fetch('/weather?address=' + searchItem.value).then((response)=> {
 
     response.json().then((data) => {
         if(data.error) {
